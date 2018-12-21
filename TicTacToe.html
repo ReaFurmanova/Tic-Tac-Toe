@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.board{
+			display: table;
+			position: fixed;
+			left: 50%;
+			top: 20%;
+			transform: translate(-50%);
+			
+		}
+		.square{
+			width: 150px;
+			height: 150px;
+			display: table-cell;
+			border:1px solid grey;
+			border-radius: 8%;
+			background-color: antiquewhite;
+			text-align: center;
+			font-size: 3cm;
+			font-family: Arial;
+			color: grey;
+		}
+		.row{
+			display: table-row;
+		}
+		h1{
+			position: fixed;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		p{
+			position: fixed;
+			top: 10%;
+			left: 50%;
+			transform: translate(-50%);
+			padding-bottom: 20px;
+			color: grey;
+		}
+		button{
+			position: fixed;
+			bottom: 5%;
+			left: 50%;
+			transform: translate(-50%);
+			background-color: antiquewhite;
+			width: 100px;
+			height: 35px;
+			border:1px solid grey;
+			border-radius: 8%;
+			color: grey;
+		}
+		.hidden{
+				display:none;
+		}
+		#who{
+			font-size: 1cm;
+			color: black;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>Tic tac toe</h1>
+	<p class="para hidden">Player <strong><span id="who"></span></strong> is has won the round!</p>
+
+	<div class="game">
+		<div class="board">
+			<div class="row">
+				<div class="square" id="1"></div>
+				<div class="square" id="2"></div>
+				<div class="square" id="3"></div>
+			</div>
+			<div class="row">
+				<div class="square" id="4"></div>
+				<div class="square" id="5"></div>
+				<div class="square" id="6"></div>
+			</div>
+			<div class="row">
+				<div class="square" id="7"></div>
+				<div class="square" id="8"></div>
+				<div class="square" id="9"></div>
+			</div>
+		</div>
+	</div>
+	<button id="button">Reset game</button>
+<script src="script.js"></script>
+</body>
+</html>
